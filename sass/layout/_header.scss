@@ -1,0 +1,70 @@
+
+.header{
+   
+    height: 95vh;
+        background-image: linear-gradient(
+            to right top, 
+            rgba($color-primary-light, .8),
+            rgba($color-primary-dark, .8)) , 
+            url(../img/cover-placehold.jpg);
+           
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+    &__logo-box{
+        position: absolute;
+        top: 3rem;
+        left: 6rem;
+    }
+
+    &__logo{
+        height: 10rem;
+        width: auto;
+        float: left;
+    }
+
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }  
+
+    &__main-nav{
+        float: right;
+        list-style: none;
+        margin-top: 4rem;
+
+        & li{
+            display: inline-block;
+            margin-left: 4rem;
+
+            & a:link,
+            & a:visited{
+                padding: 1rem 0;
+                color: $color-white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: $default-font-size;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom .3s;
+
+            }
+
+            & a:hover,
+            & a:active{
+                border-bottom: 2px solid rgba($color-white, .8);
+            }
+        }
+    }
+} 
+
+/*
+background img credit:
+<a href="https://www.freepik.com/psd/mockup">Mockup psd created by jcomp - www.freepik.com</a>
+*/
