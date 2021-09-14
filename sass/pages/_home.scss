@@ -25,7 +25,7 @@
         to right bottom, 
         rgba($color-secondary-light, .8),
         rgba($color-secondary-dark, .8)) , 
-        url(/img/nat-4.jpg);
+        url(../img/nat-4.jpg);
     background-size: cover;
 
     clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%);
@@ -37,7 +37,7 @@
         to right bottom, 
         rgba($color-tertiary-light, .8),
         rgba($color-tertiary-dark, .8)) , 
-        url(/img/nat-4.jpg);
+        url(../img/nat-4.jpg);
     background-size: cover;
 
     clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%);
@@ -62,7 +62,7 @@
         rgba($color-white,.9) 0%,
         rgba($color-white,.9) 50%,
         transparent 50%),
-        url(/img/nat-10.jpg);
+        url(../img/nat-10.jpg);
     background-size: cover;
     border-radius: $border-radius;
     box-shadow: 0 1.5rem 4rem rgba($color-black,.2);
