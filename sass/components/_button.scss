@@ -24,11 +24,6 @@ after clicking (normally turns purple)*/
         transform: translateY(-.3rem);
         /*box-shadow: x-offset y-offset blur colour-of-shadow */
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
-
-        &::after{
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
     }
     
     /*when clicked*/
@@ -42,10 +37,6 @@ after clicking (normally turns purple)*/
     &--white{
         background-color: $color-white;
         color: $color-grey-dark;
-
-        &::after{
-            background-color: $color-white;
-        }
     }
 
     &--grey{
@@ -68,7 +59,7 @@ after clicking (normally turns purple)*/
     }
     
     /*::after pseudoclass is treated like a child of the btn class, 
-    therefore 100% of the height/width refers to the parent element*/
+    therefore 100% of the height/width refers to the parent element
     &::after{
         content: "";
         display: inline-block;
@@ -81,7 +72,7 @@ after clicking (normally turns purple)*/
         z-index: -1;
         transition: all 0.4s;
     }
-    
+    */
     &--animated{
         animation: moveInBottom .5s ease-out .75s;
         /*Automatically applies the animation properties at 0%*/

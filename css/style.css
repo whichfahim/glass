@@ -171,7 +171,20 @@ after clicking (normally turns purple)*/
   /*when hovered*/
   /*when clicked*/
   /*::after pseudoclass is treated like a child of the btn class, 
-    therefore 100% of the height/width refers to the parent element*/ }
+    therefore 100% of the height/width refers to the parent element
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: .5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+    */ }
   .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -187,9 +200,6 @@ after clicking (normally turns purple)*/
     transform: translateY(-0.3rem);
     /*box-shadow: x-offset y-offset blur colour-of-shadow */
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .btn:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
   .btn:active, .btn:focus {
     outline: none;
     transform: translateY(-1px);
@@ -197,8 +207,6 @@ after clicking (normally turns purple)*/
   .btn--white {
     background-color: #FFF;
     color: #777; }
-    .btn--white::after {
-      background-color: #FFF; }
   .btn--grey {
     background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6));
     /*background-color: $color-primary;*/
@@ -207,17 +215,6 @@ after clicking (normally turns purple)*/
     .btn--grey::after {
       background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6));
       /*background-color: $color-primary;*/ }
-  .btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: .5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s; }
   .btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     /*Automatically applies the animation properties at 0%*/
