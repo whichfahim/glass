@@ -56,7 +56,7 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
+  color: #FFF;
   padding: 3rem; }
 
 .heading-primary {
@@ -94,11 +94,14 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   display: inline-block;
-  background-image: linear-gradient(to right, #C1D4D9, #7B95A6);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #FFF;
+  /*
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    */
   letter-spacing: .2rem;
   transition: all .3s; }
   .heading-secondary:hover {
@@ -106,17 +109,6 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     /*box-shadow: x-offset y-offset blur colour-of-shadow 
         box-shadow: 0 1rem 2rem rgba($color-black, .2);*/ }
-  .heading-secondary-span {
-    /*
-        background-image: linear-gradient(
-            to right bottom, 
-            rgba($color-secondary-light,.85), 
-            rgba($color-white,.85));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        */
-    font-weight: 300;
-    color: #FFF; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -446,7 +438,7 @@ after clicking (normally turns purple)*/
   .form__radio-button {
     height: 3rem;
     width: 3rem;
-    border: 5px solid #9FB6BF;
+    border: 5px solid #FFF;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -462,7 +454,7 @@ after clicking (normally turns purple)*/
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #9FB6BF;
+      background-color: #FFF;
       opacity: 0;
       transition: opacity .3s; }
   .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
@@ -508,7 +500,7 @@ after clicking (normally turns purple)*/
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(255, 255, 255, 0.4));
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -710,40 +702,56 @@ background img credit:
       .navigation__main-nav li a:active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
 
-.section-about {
-  background-color: #F0F0F2;
-  padding: 20rem 0;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%, 0% 0%); }
-
+/* Not using it for now
+.section-about{
+    
+    
+    background-color: $color-grey-light-1;
+    padding: 20rem 0;
+    
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%, 0% 0%);
+    
+}
+*/
 .section-products {
   background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/nat-4.jpg);
   background-size: cover;
   padding: 15rem 0;
-  clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%); }
+  /*
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%);
+    */ }
 
 .section-features__mocha {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(191, 170, 143, 0.8), rgba(140, 113, 88, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
-  clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%); }
+  /*
+    clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%);
+*/ }
 
 .section-features__matcha {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(217, 204, 139, 0.8), rgba(93, 140, 59, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%); }
+  /*
+    clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%);
+*/ }
 
 .section-stories {
   padding: 15rem 0;
+  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/nat-4.jpg);
+  background-size: cover;
   position: relative;
-  clip-path: polygon(75% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 0%); }
+  /*
+    clip-path: polygon(75% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 0%);
+    */ }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #C1D4D9, #7B95A6); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(153, 153, 153, 0.9) 0%, rgba(153, 153, 153, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
