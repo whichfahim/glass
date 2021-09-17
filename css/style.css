@@ -397,10 +397,10 @@ after clicking (normally turns purple)*/
   .form__input {
     font-size: 1.5rem;
     font-family: inherit;
-    color: inherit;
+    color: #777;
     padding: 1.5rem 2rem;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(240, 240, 242, 0.8);
     border: none;
     border-bottom: 3px solid transparent;
     width: 90%;
@@ -413,7 +413,7 @@ after clicking (normally turns purple)*/
       .form__input:focus:invalid {
         border-bottom: 3px solid #ff7730; }
     .form__input::-webkit-input-placeholder {
-      color: #999; }
+      color: #777; }
   .form__label {
     font-size: 1.2rem;
     font-weight: 700;
@@ -472,6 +472,7 @@ after clicking (normally turns purple)*/
   animation: 20s slider infinite; }
 
 .slider figure img {
+  height: auto;
   width: 20%;
   float: left;
   filter: brightness(50%); }
@@ -554,11 +555,10 @@ after clicking (normally turns purple)*/
   font-size: 1.4rem;
   color: #F0F0F2; }
   .footer__logo-box {
-    text-align: center;
-    margin-bottom: 8rem; }
+    text-align: center; }
   .footer__logo {
-    width: 25rem;
-    height: auto; }
+    width: auto;
+    height: 25rem; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -661,10 +661,10 @@ after clicking (normally turns purple)*/
         */ }
   .header__logo-box {
     position: absolute;
-    top: 1rem;
+    top: 0;
     left: 3rem; }
   .header__logo {
-    height: 10rem;
+    height: 15rem;
     width: auto;
     float: left; }
   .header__text-box {
@@ -748,10 +748,10 @@ background img credit:
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #C1D4D9, #7B95A6); }
+  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(153, 153, 153, 0.9) 0%, rgba(153, 153, 153, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(119, 119, 119, 0.8) 0%, rgba(119, 119, 119, 0.8) 50%, transparent 50%), url(../img/form.jpg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
