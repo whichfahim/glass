@@ -2,23 +2,23 @@
 .header{
    
     height: 95vh;
-        background-image: linear-gradient(
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+        /*
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+         background-image: linear-gradient(
             to right top, 
             rgba($color-primary-light, .8),
             rgba($color-primary-dark, .8)) , 
             url(../img/cover-placehold.jpg);
-           
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
+        */
     &__logo-box{
         position: absolute;
-        top: 3rem;
-        left: 6rem;
+        top: 1rem;
+        left: 3rem;
     }
 
     &__logo{
@@ -35,33 +35,6 @@
         text-align: center;
     }  
 
-    &__main-nav{
-        float: right;
-        list-style: none;
-        margin-top: 4rem;
-
-        & li{
-            display: inline-block;
-            margin-left: 4rem;
-
-            & a:link,
-            & a:visited{
-                padding: 1rem 0;
-                color: $color-white;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: $default-font-size;
-                border-bottom: 2px solid transparent;
-                transition: border-bottom .3s;
-
-            }
-
-            & a:hover,
-            & a:active{
-                border-bottom: 2px solid rgba($color-white, .8);
-            }
-        }
-    }
 } 
 
 /*

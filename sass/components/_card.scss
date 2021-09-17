@@ -4,11 +4,11 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 65rem;
+    height: 69rem;
 
     &__side{
-        height: 65rem;
-        transition: all .8s ease;
+        height: 69rem;
+        transition: all .3s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -17,10 +17,14 @@
         border-radius: 1rem;
         overflow: hidden;
         box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
+        color: $color-white;
 
 
         &--front{
-            background-color: $color-white;
+            background-image: linear-gradient(
+                                to right top, 
+                                rgba($color-grey-dark, .4),
+                                rgba($color-grey-light-1, .4));
         }
     
         &--back{
@@ -36,17 +40,24 @@
         }
     }
 
-    
-
-    
-
-    &:hover &__side--front{
-        transform: rotateY(-180deg);
+    &:hover &__picture{
+        //slideshow of pictures
     }
 
+    
+    
+    &:hover &__side--front{
+        transform: translate(1rem, -1rem);
+        box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .25);
+        /*transform: rotateY(-180deg);*/
+    }
+
+    /*
     &:hover &__side--back{
         transform: rotateY(0);
     }
+    */
+    
 
     //FRONT SIDE STYLING
     &__picture{
@@ -54,18 +65,18 @@
         /*background-repeat: no-repeat;*/
         background-blend-mode: screen;
         height: 36rem;
+        margin: 2rem;
+        border-radius: 5px;
         /*
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
         */
 
         &--1{
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-            url(../img/nat-5.jpg);
+            background-image:  url(../img/nat-5.jpg);
         }
         &--2{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../img/nat-6.jpg);
+            background-image: url(../img/nat-6.jpg);
         }
     }
 

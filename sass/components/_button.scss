@@ -49,11 +49,21 @@ after clicking (normally turns purple)*/
     }
 
     &--grey{
-        background-color: $color-primary;
+        background-image: linear-gradient(
+            to right, 
+            rgba($color-secondary-dark, .6),
+            rgba($color-tertiary-dark, .6));
+        /*background-color: $color-primary;*/
         color: $color-white;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
 
         &::after{
-            background-color: $color-primary;
+            background-image: linear-gradient(
+            to right, 
+            rgba($color-secondary-dark, .6),
+            rgba($color-tertiary-dark, .6));
+            /*background-color: $color-primary;*/
         }
     }
     

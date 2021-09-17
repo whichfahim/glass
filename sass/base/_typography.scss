@@ -70,25 +70,21 @@ body{
         box-shadow: 0 1rem 2rem rgba($color-black, .2);*/
     }
 
-    &-span-mocha{
+    &-span{
+        
+        /*
         background-image: linear-gradient(
-            to left top, 
+            to right bottom, 
             rgba($color-secondary-light,.85), 
-            rgba($color-secondary-dark,.85));
-        padding: 1rem;
+            rgba($color-white,.85));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        */
         font-weight: 300;
-        color: $color-white;    
+        color: $color-white;   
     }
 
-    &-span-matcha{
-        background-image: linear-gradient(
-            to left top, 
-            rgba($color-tertiary-light,.85), 
-            rgba($color-tertiary-dark,.85));
-        padding: 1rem;
-        font-weight: 300;
-        color: $color-white;    
-    }
+    
 }
 
 .heading-tertiary{

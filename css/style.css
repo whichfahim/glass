@@ -106,14 +106,15 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     /*box-shadow: x-offset y-offset blur colour-of-shadow 
         box-shadow: 0 1rem 2rem rgba($color-black, .2);*/ }
-  .heading-secondary-span-mocha {
-    background-image: linear-gradient(to left top, rgba(191, 170, 143, 0.85), rgba(115, 86, 61, 0.85));
-    padding: 1rem;
-    font-weight: 300;
-    color: #FFF; }
-  .heading-secondary-span-matcha {
-    background-image: linear-gradient(to left top, rgba(217, 204, 139, 0.85), rgba(93, 140, 59, 0.85));
-    padding: 1rem;
+  .heading-secondary-span {
+    /*
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-secondary-light,.85), 
+            rgba($color-white,.85));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        */
     font-weight: 300;
     color: #FFF; }
 
@@ -163,7 +164,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15;
+  opacity: .1;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -205,10 +206,13 @@ after clicking (normally turns purple)*/
     .btn--white::after {
       background-color: #FFF; }
   .btn--grey {
-    background-color: #9FB6BF;
-    color: #FFF; }
+    background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6));
+    /*background-color: $color-primary;*/
+    color: #FFF;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
     .btn--grey::after {
-      background-color: #9FB6BF; }
+      background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6));
+      /*background-color: $color-primary;*/ }
   .btn::after {
     content: "";
     display: inline-block;
@@ -249,10 +253,15 @@ after clicking (normally turns purple)*/
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 65rem; }
+  height: 69rem;
+  /*
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+    */ }
   .card__side {
-    height: 65rem;
-    transition: all .8s ease;
+    height: 69rem;
+    transition: all .3s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -260,32 +269,35 @@ after clicking (normally turns purple)*/
     backface-visibility: hidden;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: -1rem 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: -1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    color: #FFF; }
     .card__side--front {
-      background-color: #FFF; }
+      background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(240, 240, 242, 0.4)); }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #BFAA8F, #73563D); }
+        background-image: linear-gradient(to right bottom, #BFAA8F, #8C7158); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #D9CC8B, #5D8C3B); }
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
+    transform: translate(1rem, -1rem);
+    box-shadow: -1.5rem 2.5rem 4rem rgba(0, 0, 0, 0.25);
+    /*transform: rotateY(-180deg);*/ }
   .card__picture {
     background-size: cover;
     /*background-repeat: no-repeat;*/
     background-blend-mode: screen;
     height: 36rem;
+    margin: 2rem;
+    border-radius: 5px;
     /*
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
         */ }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #BFAA8F, #73563D), url(../img/nat-5.jpg); }
+      background-image: url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #D9CC8B, #5D8C3B), url(../img/nat-6.jpg); }
+      background-image: url(../img/nat-6.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -300,7 +312,7 @@ after clicking (normally turns purple)*/
     padding: 1rem 1.5rem;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(191, 170, 143, 0.85), rgba(115, 86, 61, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(191, 170, 143, 0.85), rgba(140, 113, 88, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(217, 204, 139, 0.85), rgba(93, 140, 59, 0.85)); }
   .card__details {
@@ -367,13 +379,15 @@ after clicking (normally turns purple)*/
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(255, 255, 255, 0.4));
+  /*background-color: rgba($color-white, .6);*/
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: -1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s;
+  color: #FFF;
+  transition: all .3s;
   /*===All children selector===
      (> = direct child, * = all) */ }
   .feature-box__icon {
@@ -382,7 +396,7 @@ after clicking (normally turns purple)*/
     padding-bottom: 1rem; }
   .feature-box:hover {
     transform: translate(1rem, -1rem);
-    box-shadow: -1.5rem 2.5rem 4rem rgba(0, 0, 0, 0.25); }
+    box-shadow: -1.5rem 2.5rem 4rem rgba(0, 0, 0, 0.2); }
 
 .form {
   /* '+' = Adjacent sibling selector */ }
@@ -454,10 +468,46 @@ after clicking (normally turns purple)*/
   .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
     opacity: 1; }
 
+.slider {
+  height: 95vh;
+  overflow: hidden; }
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite; }
+
+.slider figure img {
+  width: 20%;
+  float: left;
+  filter: brightness(50%); }
+
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
@@ -604,17 +654,23 @@ after clicking (normally turns purple)*/
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right top, rgba(193, 212, 217, 0.8), rgba(123, 149, 166, 0.8)), url(../img/cover-placehold.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+  /*
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+         background-image: linear-gradient(
+            to right top, 
+            rgba($color-primary-light, .8),
+            rgba($color-primary-dark, .8)) , 
+            url(../img/cover-placehold.jpg);
+        */ }
   .header__logo-box {
     position: absolute;
-    top: 3rem;
-    left: 6rem; }
+    top: 1rem;
+    left: 3rem; }
   .header__logo {
     height: 10rem;
     width: auto;
@@ -625,15 +681,24 @@ after clicking (normally turns purple)*/
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  .header__main-nav {
+
+/*
+background img credit:
+<a href="https://www.freepik.com/psd/mockup">Mockup psd created by jcomp - www.freepik.com</a>
+*/
+.navigation {
+  position: absolute;
+  top: 1rem;
+  right: 10rem; }
+  .navigation__main-nav {
     float: right;
     list-style: none;
     margin-top: 4rem; }
-    .header__main-nav li {
+    .navigation__main-nav li {
       display: inline-block;
       margin-left: 4rem; }
-      .header__main-nav li a:link,
-      .header__main-nav li a:visited {
+      .navigation__main-nav li a:link,
+      .navigation__main-nav li a:visited {
         padding: 1rem 0;
         color: #FFF;
         text-decoration: none;
@@ -641,27 +706,24 @@ after clicking (normally turns purple)*/
         font-size: 1.6rem;
         border-bottom: 2px solid transparent;
         transition: border-bottom .3s; }
-      .header__main-nav li a:hover,
-      .header__main-nav li a:active {
+      .navigation__main-nav li a:hover,
+      .navigation__main-nav li a:active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
 
-/*
-background img credit:
-<a href="https://www.freepik.com/psd/mockup">Mockup psd created by jcomp - www.freepik.com</a>
-*/
 .section-about {
   background-color: #F0F0F2;
   padding: 20rem 0;
-  clip-path: polygon(75% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%, 0% 0%); }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%, 0% 0%); }
 
 .section-products {
-  background-color: #F0F0F2;
+  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/nat-4.jpg);
+  background-size: cover;
   padding: 15rem 0;
   clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%); }
 
 .section-features__mocha {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(191, 170, 143, 0.8), rgba(115, 86, 61, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(191, 170, 143, 0.8), rgba(140, 113, 88, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%); }
 
