@@ -5,27 +5,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-        /*
-        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-         background-image: linear-gradient(
-            to right top, 
-            rgba($color-primary-light, .8),
-            rgba($color-primary-dark, .8)) , 
-            url(../img/cover-placehold.jpg);
-        */
-    &__logo-box{
-        position: absolute;
-        top: 0;
-        left: 3rem;
-    }
-
-    &__logo{
-        height: 15rem;
-        width: auto;
-        float: left;
-    }
+    position: relative;    
 
     &__text-box{
         position: absolute;
@@ -36,8 +16,3 @@
     }  
 
 } 
-
-/*
-background img credit:
-<a href="https://www.freepik.com/psd/mockup">Mockup psd created by jcomp - www.freepik.com</a>
-*/

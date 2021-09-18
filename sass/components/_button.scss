@@ -41,9 +41,9 @@ after clicking (normally turns purple)*/
 
     &--grey{
         background-image: linear-gradient(
-            to right, 
-            rgba($color-secondary-dark, .6),
-            rgba($color-tertiary-dark, .6));
+        to right top, 
+        rgba($color-grey-dark, .4),
+        rgba($color-white, .4));
         /*background-color: $color-primary;*/
         color: $color-white;
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
@@ -58,25 +58,18 @@ after clicking (normally turns purple)*/
         }
     }
     
-    /*::after pseudoclass is treated like a child of the btn class, 
-    therefore 100% of the height/width refers to the parent element
-    &::after{
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: .5rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all 0.4s;
-    }
-    */
     &--animated{
         animation: moveInBottom .5s ease-out .75s;
         /*Automatically applies the animation properties at 0%*/
         animation-fill-mode: backwards;
+    }
+
+    &--transparent{
+        color: $color-white;
+        background-image: linear-gradient(
+            to bottom left, 
+            rgba($color-white, .5),
+            rgba($color-grey-dark, .5));
     }
     
 }

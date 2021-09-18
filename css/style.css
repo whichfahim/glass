@@ -169,22 +169,7 @@ body {
 after clicking (normally turns purple)*/
 .btn {
   /*when hovered*/
-  /*when clicked*/
-  /*::after pseudoclass is treated like a child of the btn class, 
-    therefore 100% of the height/width refers to the parent element
-    &::after{
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: .5rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all 0.4s;
-    }
-    */ }
+  /*when clicked*/ }
   .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -208,7 +193,7 @@ after clicking (normally turns purple)*/
     background-color: #FFF;
     color: #777; }
   .btn--grey {
-    background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6));
+    background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(255, 255, 255, 0.4));
     /*background-color: $color-primary;*/
     color: #FFF;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
@@ -219,6 +204,9 @@ after clicking (normally turns purple)*/
     animation: moveInBottom .5s ease-out .75s;
     /*Automatically applies the animation properties at 0%*/
     animation-fill-mode: backwards; }
+  .btn--transparent {
+    color: #FFF;
+    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.5), rgba(119, 119, 119, 0.5)); }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -646,24 +634,7 @@ after clicking (normally turns purple)*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  /*
-        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-         background-image: linear-gradient(
-            to right top, 
-            rgba($color-primary-light, .8),
-            rgba($color-primary-dark, .8)) , 
-            url(../img/cover-placehold.jpg);
-        */ }
-  .header__logo-box {
-    position: absolute;
-    top: 0;
-    left: 3rem; }
-  .header__logo {
-    height: 15rem;
-    width: auto;
-    float: left; }
+  position: relative; }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -671,18 +642,25 @@ after clicking (normally turns purple)*/
     transform: translate(-50%, -50%);
     text-align: center; }
 
-/*
-background img credit:
-<a href="https://www.freepik.com/psd/mockup">Mockup psd created by jcomp - www.freepik.com</a>
-*/
 .navigation {
   position: absolute;
-  top: 1rem;
-  right: 10rem; }
+  top: 3rem;
+  height: 4.5rem;
+  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(255, 255, 255, 0.4));
+  width: 100%; }
+  .navigation__logo-box {
+    position: absolute;
+    width: auto;
+    height: 5rem;
+    top: -.25rem;
+    left: 4rem; }
+  .navigation__logo {
+    height: 5rem; }
   .navigation__main-nav {
     float: right;
     list-style: none;
-    margin-top: 4rem; }
+    margin-right: 3rem;
+    padding-top: 1rem; }
     .navigation__main-nav li {
       display: inline-block;
       margin-left: 4rem; }
