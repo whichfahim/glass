@@ -67,9 +67,9 @@ after clicking (normally turns purple)*/
     &--transparent{
         color: $color-white;
         background-image: linear-gradient(
-            to bottom left, 
-            rgba($color-white, .5),
-            rgba($color-grey-dark, .5));
+            to right top,
+            rgba($color-primary, .5), 
+            transparent);
     }
     
 }

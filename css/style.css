@@ -1,5 +1,6 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in Hex */
+/* Color Theme Swatches in Hex */
 /*
 COLORS:
 Light green: #C1D4D9
@@ -206,7 +207,7 @@ after clicking (normally turns purple)*/
     animation-fill-mode: backwards; }
   .btn--transparent {
     color: #FFF;
-    background-image: linear-gradient(to bottom left, rgba(255, 255, 255, 0.5), rgba(119, 119, 119, 0.5)); }
+    background-image: linear-gradient(to right top, rgba(163, 180, 191, 0.5), transparent); }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -348,7 +349,7 @@ after clicking (normally turns purple)*/
       top: 20rem;
       z-index: 3; }
     .composition__photo:hover {
-      outline: 1.5rem solid #9FB6BF;
+      outline: 1.5rem solid #A3B4BF;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 5; }
@@ -356,7 +357,7 @@ after clicking (normally turns purple)*/
     transform: scale(0.95); }
 
 .feature-box {
-  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(255, 255, 255, 0.4));
+  background-image: linear-gradient(to right top, rgba(163, 180, 191, 0.5), transparent);
   /*background-color: rgba($color-white, .6);*/
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -451,14 +452,14 @@ after clicking (normally turns purple)*/
 
 .slider figure {
   position: relative;
-  width: 500%;
+  width: 400%;
   margin: 0;
   left: 0;
   animation: 20s slider infinite; }
 
 .slider figure img {
-  height: auto;
-  width: 20%;
+  height: 95vh;
+  width: 25%;
   float: left;
   filter: brightness(50%); }
 
@@ -562,7 +563,7 @@ after clicking (normally turns purple)*/
     display: inline-block;
     transition: all .3s; }
   .footer__link:hover, .footer__link:active {
-    color: #C1D4D9;
+    color: #C5D1D9;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: translateY(-0.5rem) scale(1.2); }
   .footer__socials-box {
@@ -646,8 +647,9 @@ after clicking (normally turns purple)*/
   position: absolute;
   top: 3rem;
   height: 4.5rem;
-  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.4), rgba(255, 255, 255, 0.4));
-  width: 100%; }
+  background-image: linear-gradient(to left, rgba(163, 180, 191, 0.5), transparent);
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .navigation__logo-box {
     position: absolute;
     width: auto;

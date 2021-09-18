@@ -5,15 +5,15 @@
 
 .slider figure{
     position: relative;
-    width: 500%;
+    width: 400%;
     margin: 0;
     left: 0;
     animation: 20s slider infinite;
 }
 
 .slider figure img{
-    height: auto;
-    width: 20%;
+    height: 95vh;
+    width: 25%;
     float: left;
     filter: brightness(50%);
 }
