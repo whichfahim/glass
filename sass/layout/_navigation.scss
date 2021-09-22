@@ -2,7 +2,7 @@
 
     position: absolute;
     top: 3rem;
-    height: 4.5rem;
+    height: 5rem;
     background-image: linear-gradient(
         to left, 
         rgba($color-primary, .5),
@@ -14,7 +14,7 @@
         position: absolute;
         width: auto;
         height: 5rem;
-        top: -.25rem;
+        top: 0;
         left: 4rem;
     }
 
@@ -26,7 +26,60 @@
         float: right;
         list-style: none;
         margin-right: 3rem;
-        padding-top: 1rem;
+        padding-top: 1.2rem;
+
+        & li{
+            display: inline-block;
+            margin-left: 4rem;
+
+            & a:link,
+            & a:visited{
+                padding: 1.3rem 0;
+                color: $color-white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: $default-font-size;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom .3s;
+
+            }
+
+            & a:hover,
+            & a:active{
+                border-bottom: 2px solid rgba($color-white, .8);
+            }
+        }
+    }
+}
+
+.sticky{
+    position: fixed;
+    top: 3rem;
+    height: 5rem;
+    background-image: linear-gradient(
+        to left, 
+        rgba($color-primary, .5),
+        transparent);
+    width: 100%;  
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+    &__logo-box{
+        position: absolute;
+        width: auto;
+        height: 5rem;
+        top: 0;
+        left: 4rem;
+    }
+
+    &__logo{
+        height: 5rem;   
+    }
+
+    &__main-nav{
+        float: right;
+        list-style: none;
+        margin-right: 3rem;
+        padding-top: 1.2rem;
 
         & li{
             display: inline-block;

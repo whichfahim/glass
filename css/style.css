@@ -64,7 +64,7 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
-    font-family: 'Pinyon Script', cursive;
+    font-family: 'Poiret One', cursive;
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -86,8 +86,8 @@ body {
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
     text-transform: uppercase;
     animation: moveInRight 1s ease-out; }
 
@@ -273,9 +273,9 @@ after clicking (normally turns purple)*/
         clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
         */ }
     .card__picture--1 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: url(../img/products/mocha.jpg); }
     .card__picture--2 {
-      background-image: url(../img/nat-6.jpg); }
+      background-image: url(../img/products/matcha.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -646,7 +646,7 @@ after clicking (normally turns purple)*/
 .navigation {
   position: absolute;
   top: 3rem;
-  height: 4.5rem;
+  height: 5rem;
   background-image: linear-gradient(to left, rgba(163, 180, 191, 0.5), transparent);
   width: 100%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
@@ -654,7 +654,7 @@ after clicking (normally turns purple)*/
     position: absolute;
     width: auto;
     height: 5rem;
-    top: -.25rem;
+    top: 0;
     left: 4rem; }
   .navigation__logo {
     height: 5rem; }
@@ -662,13 +662,13 @@ after clicking (normally turns purple)*/
     float: right;
     list-style: none;
     margin-right: 3rem;
-    padding-top: 1rem; }
+    padding-top: 1.2rem; }
     .navigation__main-nav li {
       display: inline-block;
       margin-left: 4rem; }
       .navigation__main-nav li a:link,
       .navigation__main-nav li a:visited {
-        padding: 1rem 0;
+        padding: 1.3rem 0;
         color: #FFF;
         text-decoration: none;
         text-transform: uppercase;
@@ -677,6 +677,42 @@ after clicking (normally turns purple)*/
         transition: border-bottom .3s; }
       .navigation__main-nav li a:hover,
       .navigation__main-nav li a:active {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
+
+.sticky {
+  position: fixed;
+  top: 3rem;
+  height: 5rem;
+  background-image: linear-gradient(to left, rgba(163, 180, 191, 0.5), transparent);
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .sticky__logo-box {
+    position: absolute;
+    width: auto;
+    height: 5rem;
+    top: 0;
+    left: 4rem; }
+  .sticky__logo {
+    height: 5rem; }
+  .sticky__main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 3rem;
+    padding-top: 1.2rem; }
+    .sticky__main-nav li {
+      display: inline-block;
+      margin-left: 4rem; }
+      .sticky__main-nav li a:link,
+      .sticky__main-nav li a:visited {
+        padding: 1rem 0;
+        color: #FFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom .3s; }
+      .sticky__main-nav li a:hover,
+      .sticky__main-nav li a:active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
 
 /* Not using it for now
@@ -691,16 +727,14 @@ after clicking (normally turns purple)*/
 }
 */
 .section-products {
-  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/bg/products.jpg);
   background-size: cover;
-  padding: 15rem 0;
-  /*
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%);
-    */ }
+  background-position: center;
+  padding: 15rem 0; }
 
 .section-features__mocha {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(191, 170, 143, 0.8), rgba(140, 113, 88, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(191, 170, 143, 0.6)), url(../img/bg/mocha.jpg);
   background-size: cover;
   /*
     clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%);
@@ -708,15 +742,16 @@ after clicking (normally turns purple)*/
 
 .section-features__matcha {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(217, 204, 139, 0.8), rgba(93, 140, 59, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right top, rgba(93, 140, 59, 0.8), rgba(217, 204, 139, 0.8)), url(../img/bg/matcha.jpg);
   background-size: cover;
+  background-position: center;
   /*
     clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%);
 */ }
 
 .section-stories {
   padding: 15rem 0;
-  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right top, rgba(93, 140, 59, 0.8), rgba(140, 113, 88, 0.8)), url(../img/bg/reviews.jpg);
   background-size: cover;
   position: relative;
   /*
@@ -725,7 +760,7 @@ after clicking (normally turns purple)*/
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)); }
+  background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(119, 119, 119, 0.8) 0%, rgba(119, 119, 119, 0.8) 50%, transparent 50%), url(../img/form.jpg);
@@ -735,3 +770,12 @@ after clicking (normally turns purple)*/
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.section-preview {
+  padding: 5rem 0;
+  background-image: linear-gradient(to right top, #777777, rgba(255, 255, 255, 0.6));
+  background-size: cover;
+  position: relative;
+  /*
+    clip-path: polygon(75% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 0%);
+    */ }
