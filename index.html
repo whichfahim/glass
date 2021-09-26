@@ -35,7 +35,8 @@
                     </figure>
                 </div>
 
-                <nav class="navigation">
+                <div>
+                    <nav class="navigation">
                     
                         <div class="navigation__logo-box">
                             <a href="index.html" class="navigation__link">
@@ -43,13 +44,15 @@
                             </a>
                         </div>
                         <ul class="navigation__main-nav">
-                            <li><a href="html/about.html">About Us</a></li>
-                            <li><a href="html/shop.html">Shop</a></li>
-                            <li><a href="#">Stories</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#products">Shop</a></li>
+                            <li><a href="#stories">Stories</a></li>
                             <li><a href="html/blog.html">Blog</a></li>
                         </ul> 
                     
-                </nav>
+                    </nav>
+                </div>
+               
                 
                 
                 <div class="header__text-box">
@@ -58,15 +61,15 @@
                         <span class="heading-primary--sub">The transparent beauty company</span>
                     </h1>
 
-                    <a href="#" class="btn btn--transparent btn--animated">Shop now</a>
+                    <a href="#" class="btn btn--transparent btn--animated js--scroll-to-products">Shop now</a>
                 </div>
                 
             
         </header>
 
         <main>
-            <!---
-            <section class="section-about"> 
+            
+            <section class="section-about js--section-about" id="about"> 
                
                 <div class="u-center-text u-margin-bottom-big">
                     
@@ -99,10 +102,10 @@
                     </div>
                 </div>
             </section>
-            --->
+            
             
 
-            <section class="section-products">
+            <section class="section-products js--section-products" id="products">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Featured products
@@ -292,7 +295,7 @@
              
 
             
-            <section class="section-stories">
+            <section class="section-stories js--section-stories" id="stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/video.mp4" type="video/mp4">
@@ -432,6 +435,9 @@
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
     </body>
 
 

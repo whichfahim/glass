@@ -46,7 +46,8 @@ html {
   /*1 rem = root font size
     Default browser font size = 16px
     .625*16 = 10px */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -662,7 +663,7 @@ after clicking (normally turns purple)*/
     float: right;
     list-style: none;
     margin-right: 3rem;
-    padding-top: 1.2rem; }
+    margin-top: 1.2rem; }
     .navigation__main-nav li {
       display: inline-block;
       margin-left: 4rem; }
@@ -684,8 +685,9 @@ after clicking (normally turns purple)*/
   top: 3rem;
   height: 5rem;
   background-image: linear-gradient(to left, rgba(163, 180, 191, 0.5), transparent);
-  width: 100%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  width: 95.25%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 100; }
   .sticky__logo-box {
     position: absolute;
     width: auto;
@@ -715,17 +717,11 @@ after clicking (normally turns purple)*/
       .sticky__main-nav li a:active {
         border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
 
-/* Not using it for now
-.section-about{
-    
-    
-    background-color: $color-grey-light-1;
-    padding: 20rem 0;
-    
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%, 0% 0%);
-    
-}
-*/
+.section-about {
+  background-color: #F0F0F2;
+  padding: 20rem 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%, 0% 0%); }
+
 .section-products {
   background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/bg/products.jpg);
   background-size: cover;
