@@ -10,6 +10,17 @@ $(document).ready(function() {
         
     });
 
+    $('.js--footer').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').removeClass('sticky');
+        } else {
+            $('nav').addClass('sticky');
+        }
+        
+    },{
+        offset: '25%'
+    });
+
     /* SCROLL ON BUTTONS */
     $('.js--scroll-to-products').click(function() {
         $('html, body').animate({scrollTop: $('.js--section-products').offset().top}, 1000);

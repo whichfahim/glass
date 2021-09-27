@@ -718,9 +718,8 @@ after clicking (normally turns purple)*/
         border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
 
 .section-about {
-  background-color: #F0F0F2;
-  padding: 20rem 0;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 80%, 0% 0%); }
+  background-color: rgba(119, 119, 119, 0.8);
+  padding: 20rem 0; }
 
 .section-products {
   background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(93, 140, 59, 0.6)), url(../img/bg/products.jpg);
@@ -728,26 +727,9 @@ after clicking (normally turns purple)*/
   background-position: center;
   padding: 15rem 0; }
 
-.section-features__mocha {
-  padding: 20rem 0;
-  background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(191, 170, 143, 0.6)), url(../img/bg/mocha.jpg);
-  background-size: cover;
-  /*
-    clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%);
-*/ }
-
-.section-features__matcha {
-  padding: 20rem 0;
-  background-image: linear-gradient(to right top, rgba(93, 140, 59, 0.8), rgba(217, 204, 139, 0.8)), url(../img/bg/matcha.jpg);
-  background-size: cover;
-  background-position: center;
-  /*
-    clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%);
-*/ }
-
 .section-stories {
   padding: 15rem 0;
-  background-image: linear-gradient(to right top, rgba(93, 140, 59, 0.8), rgba(140, 113, 88, 0.8)), url(../img/bg/reviews.jpg);
+  background-image: linear-gradient(to right, rgba(140, 113, 88, 0.8), rgba(93, 140, 59, 0.8)), url(../img/bg/reviews.jpg);
   background-size: cover;
   position: relative;
   /*
@@ -775,3 +757,20 @@ after clicking (normally turns purple)*/
   /*
     clip-path: polygon(75% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 0%);
     */ }
+
+.section-features__mocha {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right top, rgba(140, 113, 88, 0.6), rgba(191, 170, 143, 0.6)), url(../img/bg/mocha.jpg);
+  background-size: cover;
+  /*
+    clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%);
+*/ }
+
+.section-features__matcha {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right top, rgba(93, 140, 59, 0.8), rgba(217, 204, 139, 0.8)), url(../img/bg/matcha.jpg);
+  background-size: cover;
+  background-position: center;
+  /*
+    clip-path: polygon(25% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%, 0% 25%);
+*/ }
