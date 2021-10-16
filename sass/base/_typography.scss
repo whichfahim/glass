@@ -55,11 +55,6 @@ body{
     font-weight: 300;
     display: inline-block;
     color: $color-white; 
-    /*
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
-    */
     letter-spacing: .2rem;
     transition: all .3s;    
 
@@ -70,15 +65,31 @@ body{
         box-shadow: 0 1rem 2rem rgba($color-black, .2);*/
     }
 
+    &--about{
+        color: $color-grey-dark;       
+    } 
     
-
+    &--mocha{
+        position: absolute;
+        left: 37%;
+        top: 25%;       
+    }
     
+    &--matcha{
+        position: absolute;
+        right: 28%;
+        top: 30%;       
+    } 
 }
 
 .heading-tertiary{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+
+    &--span-products{
+        font-size: 1.1rem;
+    }
 }
 
 .paragraph{

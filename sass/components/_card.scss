@@ -73,10 +73,10 @@
         */
 
         &--1{
-            background-image:  url(../img/products/mocha.jpg);
+            background-image:  url(../img/card/mocha.jpg);
         }
         &--2{
-            background-image: url(../img/products/matcha.jpg);
+            background-image: url(../img/card/matcha.jpg);
         }
     }
 
@@ -136,7 +136,7 @@
 
         &__icon{
             font-size: 1.5rem;
-            color: $color-grey-dark;
+            color: $color-white;
         }
     }
 

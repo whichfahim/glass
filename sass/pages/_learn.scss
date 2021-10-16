@@ -1,0 +1,43 @@
+.section-steps{
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding: 3%;
+    margin-top: 50px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+
+}
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color: $color-white;
+    border: 2px solid $color-white;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float:left;
+    font-size: 150%;
+    margin-right: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

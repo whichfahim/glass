@@ -4,23 +4,51 @@
         rgba($color-primary, .5),
         transparent);
     /*background-color: rgba($color-white, .6);*/
-    font-size: 1.5rem;
-    padding: 2.5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
     color: $color-white;
     transition: all .3s;
+    height: 23rem;
+    width: 18rem;
+    
 
+    &__img{
+        
+        
+        &--mocha{
+            position: absolute;
+            top: 25%;
+            left: 3%;
+            display: inline-block;
+            height: 38rem;
+            width: auto;
+            border-radius: 3px;  
+        }
+        
+        &--matcha{
+            position: absolute;
+            display: inline-block;
+            top: 30%;
+            right: 3%;
+            height: 38rem;
+            width: auto;
+            border-radius: 3px;
+            z-index: 10;
+        }
+        
+    }
     
     &__icon{
-        height: 10rem;
+        height: 7rem;
         width: auto;
         padding-bottom: 1rem;
     }
 
     &:hover{
-        transform: translate(1rem, -1rem);
+        transform: translateY(-1rem);
         box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .2);
     }
 
@@ -31,3 +59,4 @@
     }
     
 }
+

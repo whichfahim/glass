@@ -1,18 +1,43 @@
 
 .header{
-   
     height: 95vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;    
+    position: relative;  
 
-    &__text-box{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }  
+    
+
+    &-home{  
+    
+        &__text-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        } 
+    }
+
+    &-about{
+        background-image: url(../img/about/about.png);
+        background-size: cover;
+    }
+
+    &-products{
+        height: max-content;
+        padding: 15rem 0; 
+        background-image: linear-gradient(
+                            to bottom,
+                            rgba($color-secondary-dark,.8),
+                            rgba($color-pastel-green,.8));
+    }
+   
+    &-learn{
+        padding: 15rem 0; 
+        background-color: $color-grey-dark;
+        height: max-content;
+    }
+   
 
 } 
