@@ -1,43 +1,47 @@
-.section-steps{
+.section-did-you-know{
+    padding: 10rem 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-pastel-green,.8),
+        rgba($color-pastel-pale,1));
+    background-size: cover;
 }
 
-.steps-box:first-child{
-    text-align: right;
-    padding-right:3%;
-    margin-top: 30px;
+.section-benefits--mocha{
+    padding: 10rem 0;
+    background-color: $color-pastel-pale;
+    position: relative;
 }
 
-.steps-box:last-child{
-    padding: 3%;
-    margin-top: 50px;
+.section-benefits--matcha{
+    padding: 10rem 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-pastel-pale,1) .1%,
+        rgba($color-pastel-green,1));
+    position: relative;
 }
 
-.app-screen{
-    width: 40%;
+.section-book--learn{
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba($color-pastel-green,1) 10%,
+        rgba($color-secondary-light,.8));
 }
 
-.works-step{
-    margin-bottom: 50px;
+.book{
+    background-image: linear-gradient(105deg,
+        rgba($color-grey-dark,.8) 0%,
+        rgba($color-grey-dark,.8) 50%,
+        transparent 50%),
+        url(../img/form.jpg);
+    background-size: cover;
+    border-radius: $border-radius;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.2);
 
-}
-.works-step:last-of-type{
-    margin-bottom: 80px;
-}
-
-.works-step div{
-    color: $color-white;
-    border: 2px solid $color-white;
-    display: inline-block;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    padding: 5px;
-    float:left;
-    font-size: 150%;
-    margin-right: 25px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
 }

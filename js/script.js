@@ -1,7 +1,10 @@
 $(document).ready(function() {
     
-    /* STICKY NAVIGATION */
-    $('.js--section-about').waypoint(function(direction) {
+    /* =======================
+        STICKY NAVIGATION 
+        =================*/
+        /*===HOME===*/
+    $('.js--section-products').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
         } else {
@@ -10,6 +13,7 @@ $(document).ready(function() {
         
     });
 
+    /*
     $('.js--footer').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').removeClass('sticky');
@@ -18,13 +22,47 @@ $(document).ready(function() {
         }
         
     },{
-        offset: '25%'
+        offset: '90%'
+    });
+    */
+
+    /*===LEARN===*/
+    $('.js--did-you-know').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+        
+    });
+
+    $('.js--book').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').removeClass('sticky');
+        } else {
+            $('nav').addClass('sticky');
+        }
+        
+    },{
+        offset: '15%'
+    });
+
+    /*===PRODUCTS===*/
+    $('.js--section-steps').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+        
     });
 
     /* SCROLL ON BUTTONS */
+    /*
     $('.js--scroll-to-products').click(function() {
         $('html, body').animate({scrollTop: $('.js--section-products').offset().top}, 1000);
     });
+    */
 
     /*
     $('.js--scroll-to-stories').click(function() {

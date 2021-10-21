@@ -42,8 +42,8 @@ after clicking (normally turns purple)*/
     &--grey{
         background-image: linear-gradient(
         to right top, 
-        rgba($color-grey-dark, .4),
-        rgba($color-white, .4));
+        rgba($color-grey-dark, .8),
+        transparent);
         /*background-color: $color-primary;*/
         color: $color-white;
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);

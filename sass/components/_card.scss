@@ -8,7 +8,7 @@
 
     &__side{
         height: 69rem;
-        transition: all .3s ease;
+        transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -31,12 +31,17 @@
             transform: rotateY(180deg);
 
             &-1{
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(
+                                to right top, 
+                                rgba($color-grey-dark, .4),
+                                rgba($color-grey-light-1, .4));          
             }
 
             &-2{
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
+                background-image: linear-gradient(
+                    to right top, 
+                    rgba($color-grey-dark, .4),
+                    rgba($color-grey-light-1, .4));            }
         }
     }
 
@@ -47,16 +52,16 @@
     
     
     &:hover &__side--front{
-        transform: translate(1rem, -1rem);
-        box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .25);
-        /*transform: rotateY(-180deg);*/
+        /*transform: translate(1rem, -1rem);
+        box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .25);*/
+        transform: rotateY(-180deg);
     }
 
-    /*
+    
     &:hover &__side--back{
         transform: rotateY(0);
     }
-    */
+    
     
 
     //FRONT SIDE STYLING
@@ -73,10 +78,10 @@
         */
 
         &--1{
-            background-image:  url(../../img/home/mocha.jpg);
+            background-image:  url(../img/home/mocha.jpg);
         }
         &--2{
-            background-image: url(../../img/home/matcha.jpg);
+            background-image: url(../img/home/matcha.jpg);
         }
     }
 
@@ -90,8 +95,6 @@
         top: 28rem;
         left: 2rem;
         backface-visibility: hidden;
-
-        
     }
 
     &__heading-span{

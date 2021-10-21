@@ -15,11 +15,31 @@
         display: block;
         margin-left: 50%;
         transform: translateX(-50%);
+
+        
     }
 
     &:hover{
-    
+        transform: translateY(-1rem);
+        box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .2);
     }
+
+    & div{
+        border: 2px solid $color-white;
+        display: inline-block;
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+        padding: 5px;
+        font-size: 150%;
+        margin-bottom: 1rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
 
     /*===All children selector===
      (> = direct child, * = all) */

@@ -44,3 +44,21 @@
 .u-header-box{
     position: relative;
 }
+
+.u-abs-center{
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.u-float-left{
+    float: left;
+}
+
+.u-float-right{
+    float: right;
+}
+
+.u-color-text-grey{
+    color: $color-grey-dark !important; 
+}

@@ -2,7 +2,7 @@
 
     background-color: $color-grey-dark-3;
     padding: 5rem 0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: $color-grey-light-1;
 
     &__logo-box{
@@ -79,7 +79,7 @@
                 text-decoration: none;
                 border: 0;
                 color: $color-grey-light-1;
-                font-size: 200%;
+                font-size: 180%;
                 letter-spacing: 2rem;
             }
             
@@ -112,6 +112,8 @@
     }
 
     &__copyright{
+        border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
+        display: inline-block;
    }
 }
