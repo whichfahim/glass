@@ -1,0 +1,84 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .2);
+    background-image: linear-gradient(
+        to right top, 
+        rgba($color-grey-dark, .4),
+        rgba($color-white, .4));
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    /* Select all direct children
+    & > *{
+        transform: skewX(12deg);
+    }
+    */
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        overflow: hidden;
+        /* circle ( radius = 50% of the height = 7.5rem at 50% 50% = center of the element)
+        For this to work, element must be floated, and have a width AND height defined*/
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+    }
+
+    &__img{
+        width: 100%;
+        transform: translateY(-1rem) scale(1.4);
+        transition: all .3s;
+    }
+
+    &__text{
+        transform: skewX(12deg);
+        letter-spacing: 2px;
+    }
+
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .3s;
+        backface-visibility: hidden;
+    }
+
+    &__link{
+        text-decoration: none;
+        padding: 2px;
+        color: $color-white;
+        transition: all .3s;
+        border-bottom: 2px solid transparent;
+
+        &:hover{
+            border-bottom: 2px solid $color-white;
+        }
+    }
+
+    &:hover &__caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img{
+        transform: translateY(-2rem) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+}

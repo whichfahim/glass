@@ -1,0 +1,112 @@
+.benefits{
+    width: 90%;
+    margin: 0 auto;
+    font-size: $default-font-size;
+
+    /* Select all direct children
+    & > *{
+        transform: skewX(12deg);
+    }
+    */
+
+    &__shape{
+        width: 45rem;
+        height: 45rem;
+        float: left;
+        /* circle ( radius = 50% of the height = 7.5rem at 50% 50% = center of the element)
+        For this to work, element must be floated, and have a width AND height defined*/
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+    
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &-box{
+        color: $color-grey-dark;
+        padding: 2rem;
+        width: 40%;
+        border-radius: 3px;
+        box-shadow: -.5rem .5rem 2rem rgba($color-black, .2);
+        transition: all .3s;
+
+        &--mocha{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-pastel-brown,.8),
+                rgba($color-pastel-brown,0)
+                );
+        }
+        &--matcha{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-pastel-pale,.8),
+                transparent
+                );
+        }
+
+        &__text{
+            margin-left: 1rem;
+        }
+
+        &:hover{
+            transform: translateY(-1rem);
+            box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .2);
+        }
+    }
+
+    &__img{
+        
+        transition: all .3s;
+        transform: scale(1.3);
+        
+
+        &--matcha{
+            width: 45rem;
+            height: auto; 
+        }
+
+        &:hover{
+            transform: scale(1);
+        }
+    }
+
+    &__arrow{
+        position: relative;
+        transform: scale(.9);
+
+        &--1{
+            position: absolute;
+            left: 12rem;
+            top: 2rem;
+        }
+
+        &--2{
+            position: absolute;
+            left: 12rem;
+            top: 32rem;
+        }
+        &--3{
+            position: absolute;
+            right: 14rem;
+            top: 3rem;
+        }
+        &--4{
+            position: absolute;
+            right: 14rem;
+            top: 30rem;
+            
+        }
+        
+    }
+    
+}
