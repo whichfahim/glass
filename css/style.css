@@ -380,9 +380,9 @@ after clicking (normally turns purple)*/
         clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
         */ }
     .card__picture--1 {
-      background-image: url(../img/home/mocha.jpg); }
+      background-image: url(../img/home/mocha.JPG); }
     .card__picture--2 {
-      background-image: url(../img/home/matcha.jpg); }
+      background-image: url(../img/home/matcha.JPG); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -824,7 +824,7 @@ after clicking (normally turns purple)*/
   .header-products, .header-learn {
     height: max-content;
     padding: 15rem 0;
-    background-image: linear-gradient(to bottom, #8c7158 10%, #bdd9b1); }
+    background-image: linear-gradient(to bottom, #8c7158 10%, rgba(189, 217, 177, 0.8)); }
 
 .navigation-home, .navigation-products, .navigation-learn {
   position: absolute;
@@ -963,14 +963,14 @@ after clicking (normally turns purple)*/
       background-image: linear-gradient(to right top, #f0f0f2, transparent); }
 
 .section-products {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/products.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home/products.JPG);
   background-size: cover;
   background-position: center;
   padding: 15rem 0; }
 
 .section-stories {
   padding: 15rem 0;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg/reviews.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg/reviews.JPG);
   background-size: cover;
   position: relative;
   /*
