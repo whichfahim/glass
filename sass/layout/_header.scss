@@ -1,0 +1,38 @@
+
+.header{
+    height: 80rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+
+    
+
+    &-home{  
+    
+        &__text-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        } 
+    }
+
+    &-about{
+        background-image: url(../img/about/about.png);
+        background-size: cover;
+    }
+
+    &-products,
+    &-learn{
+        height: max-content;
+        padding: 15rem 0; 
+        background-image: linear-gradient(
+                            to bottom,
+                            rgba($color-secondary-dark,1) 10%,
+                            rgba($color-pastel-green,.8));
+    }
+   
+
+} 
