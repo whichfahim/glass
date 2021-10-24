@@ -113,7 +113,7 @@ body {
     top: 25%; }
   .heading-secondary--matcha {
     position: absolute;
-    right: 28%;
+    right: 34%;
     top: 30%; }
 
 .heading-tertiary {
@@ -121,7 +121,7 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
   .heading-tertiary--span-products {
-    font-size: 1.1rem; }
+    font-size: 1.3rem; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -466,15 +466,15 @@ after clicking (normally turns purple)*/
 .feature-box {
   background-image: linear-gradient(to right top, rgba(163, 180, 191, 0.5), transparent);
   /*background-color: rgba($color-white, .6);*/
-  font-size: 1.3rem;
-  padding: 1rem;
+  font-size: 1.4rem;
+  padding: .7rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: -1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
   color: #FFF;
   transition: all .3s;
   height: 23rem;
-  width: 18rem;
+  width: 20rem;
   /*===All children selector===
      (> = direct child, * = all) */ }
   .feature-box__img--mocha {
@@ -491,11 +491,11 @@ after clicking (normally turns purple)*/
     top: 30%;
     right: 3%;
     height: 38rem;
-    width: auto;
+    width: 36rem;
     border-radius: 3px;
     z-index: 10; }
   .feature-box__icon {
-    height: 7rem;
+    height: 7.5rem;
     width: auto;
     padding-bottom: 1rem; }
   .feature-box:hover {
@@ -1046,7 +1046,7 @@ after clicking (normally turns purple)*/
   .section-features__matcha--ingredients {
     width: 65%;
     position: absolute;
-    left: 5%;
+    left: 2%;
     top: 50%;
     z-index: 100; }
 
