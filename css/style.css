@@ -475,25 +475,36 @@ after clicking (normally turns purple)*/
   transition: all .3s;
   height: 23rem;
   width: 20rem;
+  margin: auto;
+  /*
+    &__img{
+        
+        
+        &--mocha{
+            position: absolute;
+            top: 25%;
+            left: 3%;
+            display: block;
+            height: 38rem;
+            width: auto;
+            border-radius: 3px;  
+        }
+        
+        &--matcha{
+            position: absolute;
+            display: inline-block;
+            top: 30%;
+            right: 3%;
+            height: 38rem;
+            width: 36rem;
+            border-radius: 3px;
+            z-index: 10;
+        }
+        
+    }
+    */
   /*===All children selector===
      (> = direct child, * = all) */ }
-  .feature-box__img--mocha {
-    position: absolute;
-    top: 25%;
-    left: 3%;
-    display: block;
-    height: 38rem;
-    width: auto;
-    border-radius: 3px; }
-  .feature-box__img--matcha {
-    position: absolute;
-    display: inline-block;
-    top: 30%;
-    right: 3%;
-    height: 38rem;
-    width: 36rem;
-    border-radius: 3px;
-    z-index: 10; }
   .feature-box__icon {
     height: 7.5rem;
     width: auto;
@@ -720,7 +731,8 @@ after clicking (normally turns purple)*/
   background-color: #333;
   padding: 5rem 0;
   font-size: 1.5rem;
-  color: #F0F0F2; }
+  color: #F0F0F2;
+  word-spacing: .5rem; }
   .footer__logo-box {
     text-align: center; }
   .footer__logo {
@@ -740,7 +752,6 @@ after clicking (normally turns purple)*/
     color: #F0F0F2;
     background-color: #333;
     text-decoration: none;
-    text-transform: uppercase;
     display: inline-block;
     transition: all .3s; }
   .footer__link:hover, .footer__link:active {
@@ -766,8 +777,8 @@ after clicking (normally turns purple)*/
       font-size: 180%;
       letter-spacing: 2rem; }
     .footer__social-links a .logo-facebook:hover,
-    .footer__social-links a .logo-twitter:hover,
-    .footer__social-links a .logo-google:hover,
+    .footer__social-links a .logo-tiktok:hover,
+    .footer__social-links a .logo-youtube:hover,
     .footer__social-links a .logo-instagram:hover {
       transition: color 0.3s;
       -webkit-transition: color 0.3s;
@@ -776,12 +787,12 @@ after clicking (normally turns purple)*/
       -o-transition: color 0.3s; }
     .footer__social-links a .logo-facebook:hover {
       color: #3b5998; }
-    .footer__social-links a .logo-twitter:hover {
-      color: #55acee; }
-    .footer__social-links a .logo-google:hover {
+    .footer__social-links a .logo-tiktok:hover {
+      color: #00f2ea; }
+    .footer__social-links a .logo-youtube:hover {
       color: #dd4b39; }
     .footer__social-links a .logo-instagram:hover {
-      color: #e95950; }
+      color: #8a3ab9; }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -814,6 +825,8 @@ after clicking (normally turns purple)*/
     width: calc(3 * ( (100% - 3 * 6rem) / 4 ) + 2 * 6rem); }
   .row .col-1-of-5 {
     width: calc((100% - 4 * 6rem) / 5); }
+  .row .col-1-of-6 {
+    width: calc((100% - 5 * 6rem) / 6); }
 
 .header {
   height: 80rem;
@@ -1002,7 +1015,8 @@ after clicking (normally turns purple)*/
 .section-did-you-know {
   padding: 10rem 0;
   background-image: linear-gradient(to bottom, rgba(189, 217, 177, 0.8), #f3e6d3);
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .section-benefits--mocha {
   padding: 10rem 0;
@@ -1030,25 +1044,30 @@ after clicking (normally turns purple)*/
   padding: 20rem 0;
   background-image: linear-gradient(to bottom, rgba(140, 113, 88, 0.8) 60%, rgba(191, 170, 143, 0.8));
   position: relative;
-  height: 100vh; }
-  .section-features__mocha--ingredients {
-    width: 65%;
-    position: absolute;
-    right: 5%;
-    top: 45%; }
+  /*
+    &--ingredients{
+        width: 65%;
+        position: absolute;
+        right: 5%;
+        top: 45%;         
+    }
+    */ }
 
 .section-features__matcha {
   padding: 20rem 0;
   background-image: linear-gradient(to bottom, rgba(191, 170, 143, 0.8) 10%, #bdd9b1);
   background-size: cover;
   background-position: center;
-  position: relative; }
-  .section-features__matcha--ingredients {
-    width: 65%;
-    position: absolute;
-    left: 2%;
-    top: 50%;
-    z-index: 100; }
+  position: relative;
+  /*
+    &--ingredients{
+        width: 65%;
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        z-index: 100;  
+    }
+    */ }
 
 .section-book--products {
   padding: 15rem 0;

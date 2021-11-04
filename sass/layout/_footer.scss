@@ -4,6 +4,7 @@
     padding: 5rem 0;
     font-size: 1.5rem;
     color: $color-grey-light-1;
+    word-spacing: .5rem;
 
     &__logo-box{
         text-align: center;
@@ -38,7 +39,6 @@
             color: $color-grey-light-1;
             background-color: $color-grey-dark-3;
             text-decoration: none;
-            text-transform: uppercase;
             display: inline-block;
             transition: all .3s;
         }
@@ -84,8 +84,8 @@
             }
             
             .logo-facebook:hover,
-            .logo-twitter:hover,
-            .logo-google:hover,
+            .logo-tiktok:hover,
+            .logo-youtube:hover,
             .logo-instagram:hover{
                 transition: color 0.3s;
                 -webkit-transition: color 0.3s;
@@ -97,11 +97,11 @@
             .logo-facebook:hover{
                 color: $color-facebook;
             }
-            .logo-twitter:hover{
-                color: $color-twitter;
+            .logo-tiktok:hover{
+                color: $color-tiktok;
             }
-            .logo-google:hover{
-                color:$color-google;
+            .logo-youtube:hover{
+                color:$color-youtube;
             }
             .logo-instagram:hover{
                 color: $color-instagram;

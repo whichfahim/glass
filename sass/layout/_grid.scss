@@ -45,4 +45,8 @@
     .col-1-of-5{
         width: calc((100% - 4 * #{$gutter-horizontal}) / 5 );
     }
+
+    .col-1-of-6{
+        width: calc((100% - 5 * #{$gutter-horizontal}) / 6 );
+    }
 }
