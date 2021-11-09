@@ -1,6 +1,6 @@
 
 .header{
-    height: 80rem;
+    height: 75rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,19 +19,53 @@
         } 
     }
 
+    &-learn{
+        background-image: url(../img/learn/hero-1.jpg);
+        background-size: cover;
+
+        &__text-box{
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+
     &-about{
         background-image: url(../img/about/about.png);
         background-size: cover;
     }
 
-    &-products,
-    &-learn{
-        height: max-content;
+    &-products{
+        height: 150vh;
         padding: 15rem 0; 
         background-image: linear-gradient(
                             to bottom,
-                            rgba($color-secondary-dark,1) 10%,
-                            rgba($color-pastel-green,.8));
+                            rgba($color-pastel-green,.8),
+                            rgba($color-pastel-pale,.8));
+
+        &__text-box{
+            color: $color-grey-dark !important;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        &__container{
+            height: 80rem;
+            position: absolute;
+            top: 25%;
+            left: 70%;
+
+            & img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+            
+        }
     }
    
 
