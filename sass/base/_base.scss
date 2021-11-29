@@ -11,30 +11,57 @@
 html{
     /*1 rem = root font size
     Default browser font size = 16px
-    .625*16 = 10px */
+    .625*16 = 10px 
+    
+    0   - 400px   : Small-phone
+    400 - 600px   : Phone
+    600 - 920px   : Tablet portrait
+    920 - 1200px  : Tablet landscape
+    1200 - 1600px : Normal styles (default)
+    1600- 1900px  : Desktop
+    1900px+       : Big desktop 
+    */
+
     font-size: 62.5%; 
     scroll-behavior: smooth;
 
-    @include respond(big-desktop){
-        font-size: 75%; //1rem = 12px, 12/16 = 75%
+    
+
+    @include respond(desktop){        // width > 1600? 
+        font-size: 75%;               //1rem = 12px, 12/16 = 75%
     }
 
-    @include respond(tab-land){
-        font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+    @include respond(big-desktop){    // width > 1900? 
+        font-size: 81.25%;            //1rem = 13px, 13/16 = 81.25%
     }
 
-    @include respond(tab-port){
-        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    @include respond(tab-land){       // width < 1200? 
+        font-size: 56.25%;            //1rem = 9px, 9/16 = 56.25%
     }
 
-    @include respond(phone){
-        font-size: 50%;
+    @include respond(tab-port){       // width < 900?
+        font-size: 50%;               //1rem = 8px, 8/16 = 50%
     }
+
+    @include respond(phone){          // width < 600?
+        font-size: 37.5%;             //1rem = 6px, 6/16 = 37.5%
+    }
+    @include respond(small-phone){    // width < 400?
+        font-size: 31.25%;            //1rem = 5px, 5/16 = 31.25%
+    }
+
+    
+    
     
 }
 
 body{
-   box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-land){ // width < 1200?
+        padding: 0;    
+    }
 }
 
 

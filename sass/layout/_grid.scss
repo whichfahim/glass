@@ -2,9 +2,33 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    &:not(:last-child){
-        margin-bottom: $gutter-vertical;    
+    @include respond(desktop){
+        max-width: $grid-width-large;
     }
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;  
+
+        @include respond(desktop){
+            margin-bottom: $gutter-vertical-large; 
+        }
+
+        @include respond(tab-land){
+            margin-bottom: $gutter-vertical-medium; 
+        }  
+        
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small; 
+        }  
+    }
+
+    @include respond(tab-land){
+        padding: 0 2rem;
+    }  
+
+    @include respond(tab-port){
+        max-width: 60rem;
+    }  
 
     @include clearfix;
 
@@ -12,9 +36,19 @@
         float: left;
 
         &:not(:last-child){
-            margin-right: $gutter-horizontal;   
+            margin-right: $gutter-horizontal;
+            
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
         }
 
+        
+
+        @include respond(tab-port){
+            width: 100% !important;
+        }
         
     }
 

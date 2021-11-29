@@ -19,12 +19,19 @@
         box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
         color: $color-white;
 
+        &--about{
+            height: 50rem;
+        }
 
         &--front{
             background-image: linear-gradient(
                                 to right top, 
                                 rgba($color-grey-dark, .4),
                                 rgba($color-grey-light-1, .4));
+            
+            &--products{
+                color: $color-grey-dark;
+            }
         }
     
         &--back{
@@ -68,10 +75,6 @@
         height: 36rem;
         margin: 2rem;
         border-radius: 5px;
-        /*
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0% 100%);
-        */
 
         &--1{
             background-image:  url(../img/home/mocha.jpg);
@@ -136,6 +139,10 @@
         &__icon{
             font-size: 1.5rem;
             color: $color-white;
+
+            &--products{
+                color: $color-grey-dark;
+            }
         }
     }
 
@@ -153,6 +160,9 @@
         text-align: center;
         color: $color-white;
         margin-bottom: 8rem;
+        &--products{
+            color: $color-grey-dark;
+        }
     }
 
     &__price-only{
@@ -165,4 +175,111 @@
         font-weight: 100;
     }
 
+    @include respond (tab-port){
+         //FUNCTIONALITY
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
+        background-image: linear-gradient(
+            to top, 
+            rgba($color-grey-dark, .4),
+            rgba($color-grey-light-1, .4)); 
+
+        &__side{
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            background-image: none;
+        
+            &--back{
+                transform: rotateY(0);
+                margin-top: -2rem;
+            }
+        }
+
+        
+        
+        &:hover &__side--front{
+            /*transform: translate(1rem, -1rem);
+            box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .25);*/
+            transform: rotateY(-0);
+        }
+       
+        &__details{
+            padding: 1rem 3rem;
+        } 
+
+        
+
+        //FRONT SIDE STYLING
+        &__cta{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+        }
+        
+        &__price-box{
+            margin-bottom: 3rem;
+
+            
+        }
+
+   
+
+        &__price-value{
+            font-size: 4rem;
+            font-weight: 300;
+        }
+    }
+
+    &--about{
+        
+        position: relative;
+        height: 53rem;
+
+        &__side{
+            height: 53rem;
+            transition: all .3s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backface-visibility: hidden;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
+            color: $color-white;
+    
+            &--front{
+                
+                background-image: linear-gradient(
+                                to right top, 
+                                rgba($color-grey-light-1, .8),
+                                rgba($color-grey-light-1, .8));
+                /*
+                background-color: $color-grey-light-2;
+                */          
+            }
+        }
+
+        &__picture{
+            background-size: cover;
+            /*background-repeat: no-repeat;*/
+            background-blend-mode: screen;
+            height: 36rem;
+            margin: 2rem;
+            border-radius: 5px;
+            background-image:  url(../img/about/about.png);
+            background-position-x: -20rem;
+        }
+
+        &:hover &__side--front{
+            transform: translateY(-1rem);
+            box-shadow: -1.5rem 2.5rem 4rem rgba($color-black, .25);
+            
+        }
+    }
 }

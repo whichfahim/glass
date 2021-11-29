@@ -4,7 +4,7 @@
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
-    color: $color-white;
+    color: $color-grey-dark;
     transition: all .3s;
 
     
@@ -25,15 +25,15 @@
     }
 
     & div{
-        border: 2px solid $color-white;
+        border: 2px solid $color-grey-dark;
         display: inline-block;
         border-radius: 50%;
-        height: 55px;
-        width: 55px;
+        height: 7rem;
+        width: 7rem;
         text-align: center;
-        padding: 5px;
+        padding: 1rem;
         font-size: 150%;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;

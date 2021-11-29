@@ -2,7 +2,7 @@
     background-image: linear-gradient(
         rgba($color-pastel-pale,.8),
         rgba($color-pastel-green,.8));
-    padding: 15rem 0;
+    padding: 10rem 0;
 }
 
 .section-steps{
@@ -10,6 +10,7 @@
     background-image: linear-gradient(
         to bottom,
         rgba($color-pastel-green,.8),
+        rgba($color-pastel-pale,.8),
         rgba($color-secondary-dark,.8)
         );
     background-size: cover;
@@ -21,7 +22,7 @@
 }
 
 .section-features__mocha{
-    padding: 20rem 0;
+    padding: 10rem 0;
     background-image: linear-gradient(
         to bottom,
         rgba($color-secondary-dark,.8) 60%,
@@ -39,7 +40,7 @@
 }
 
 .section-features__matcha{
-    padding: 20rem 0;
+    padding: 10rem 0;
     background-image: linear-gradient(
         to bottom, 
         rgba($color-secondary-light,.8) 10%,
@@ -60,10 +61,14 @@
 }
 
 .section-book--products{
-    padding: 15rem 0;
+    padding: 10rem 0;
     background-image: linear-gradient(
         to bottom, 
         rgba($color-pastel-green,1) 10%,
         rgba($color-secondary-light,.8));
+}
+
+.disclaimer{
+    color: $color-grey-dark;
 }
 

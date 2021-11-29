@@ -6,8 +6,7 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Libre+Barcode+39+Text&family=Londrina+Outline&family=Megrim&family=Nixie+One&family=Poiret+One&family=Raleway+Dots&family=Roboto:wght@100&family=Stardos+Stencil&family=Wire+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         
@@ -23,31 +22,45 @@
     <body>
         <header class="header header-home">
             <div class="slider" id="slider">
-                <figure class="slider__fig">	
-                    <img class="slider__img slider__img--home" src="img/home/hero-1.jpg" alt="header image">
-                    <img class="slider__img slider__img--home" src="img/home/hero-2.jpg" alt="header image">
-                    <img class="slider__img slider__img--home" src="img/home/hero-3.jpg" alt="header image">
-                    <img class="slider__img slider__img--home" src="img/home/hero-4.jpg" alt="header image">
-                    <img class="slider__img slider__img--home" src="img/home/hero-1.jpg" alt="header image">
+                <figure class="slider__fig">
+                    <picture class="slider__img">
+                        <source srcset="img/home/hero-1-mobile.jpg" media="(max-width:57.5em)">
+                        <img srcset="img/home/hero-1-small.jpg 1x, img/home/hero-1-large.jpg 2x" alt="header-img">
+                    </picture>
+                    <picture class="slider__img">
+                        <source srcset="img/home/hero-2-mobile.jpg" media="(max-width:57.5em)">
+                        <img srcset="img/home/hero-2.jpg 1x, img/home/hero-2-large.jpg 2x" alt="header-img">
+                    </picture>                    
+                    <picture class="slider__img">
+                        <source srcset="img/home/hero-3-mobile.jpg" media="(max-width:57.5em)">
+                        <img srcset="img/home/hero-3.jpg 1x, img/home/hero-3-large.jpg 2x" alt="header-img">
+                    </picture>                    
+                    <picture class="slider__img">
+                        <source srcset="img/home/hero-4-mobile.jpg" media="(max-width:57.5em)">
+                        <img srcset="img/home/hero-4.jpg 1x, img/home/hero-4-large.jpg 2x" alt="header-img">
+                    </picture>                
                 </figure>
             </div>
 
             <div>
-                <nav class="navigation navigation-home">
+                <nav class="navigation">
                 
-                    <div class="navigation navigation-home__logo-box">                            
-                        <a href="index.html" class="navigation-home__link">
-                        <img src="img/home/logo-glass.png" alt="Logo" class="navigation-home__logo">
+                    <div class="navigation__logo-box">                            
+                        <a href="index.html" class="navigation__link">
+                            <picture class="navigation__logo">
+                                <source srcset="img/home/logo-glass.png" media="(max-width:57.5em)">
+                                <img src="img/home/logo-glass.png" alt="Logo" class="navigation__logo">
+                            </picture>
                         </a>
                     </div>
-                    <ul class="navigation navigation-home__main-nav">
+                    <ul class="navigation__main-nav js--main-nav">
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="learn.html">Learn More</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="cart-outline"></ion-icon></a></li>
                     </ul> 
-                    
+                    <a class="mobile-nav-icon js--nav-icon"><ion-icon class="menu-outline" name="menu-outline"></ion-icon></a>
                 </nav>
             </div>
                
@@ -55,7 +68,7 @@
                 
                 <div class="header-home__text-box">
                     <h1 class="heading-primary">
-                        <span class="heading-primary--main">GLASS cosmetics</span>
+                        <span class="heading-primary--main">GLASS<br>cosmetics</span>
                         <span class="heading-primary--sub">The transparent beauty company</span>
                     </h1>
 
@@ -67,7 +80,7 @@
 
         <main>
 
-            <section class="section-products--home" id="products">
+            <section class="section-products--home js--section-products" id="products">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Featured products
@@ -213,21 +226,16 @@
                         </div>
                     </div>
                 </div>
-
-                <!--
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all reviews &rarr;</a>                
-                </div>
-                -->
             </section>
 
             <section class="section-preview">
                 <div class="container">
                     <!-- LightWidget WIDGET -->
-                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/cc6427ebb9ea55b8a8066da36fac7e4b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>                </div>
+                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/cc6427ebb9ea55b8a8066da36fac7e4b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>                
+                </div>
              </section>
 
-            <section class="section-book--home" id="section-book">
+            <section class="section-book--home js--section-book" id="section-book">
                 <div class="row">
                     <div class="book js--book">
                         <div class="book__form">

@@ -2,10 +2,18 @@
 
 .u-margin-bottom-big{
     margin-bottom: 8rem !important;
+
+    @include respond (tab-port){
+        margin-bottom: 5rem !important;
+    }
 }
 
 .u-margin-bottom-medium{
     margin-bottom: 4rem !important;
+
+    @include respond (tab-port){
+        margin-bottom: 2.5rem !important;
+    }
 } 
 
 .u-margin-bottom-small{
@@ -59,6 +67,7 @@
     float: right;
 }
 
-.u-color-text-grey{
-    color: $color-grey-dark !important; 
+.u-center-div{
+    margin: auto;
+    width: 50%;
 }

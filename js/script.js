@@ -13,6 +13,15 @@ $(document).ready(function() {
         
     });
 
+    $('.js--section-book').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').removeClass('sticky');
+        } else {
+            $('nav').addClass('sticky');
+        }
+        
+    });
+
     /*
     $('.js--footer').waypoint(function(direction) {
         if (direction == "down") {
@@ -39,17 +48,9 @@ $(document).ready(function() {
     });
 
 
-    $('.js--book').waypoint(function(direction) {
-        if (direction == "down") {
-            $('nav').removeClass('sticky');
-        } else {
-            $('nav').addClass('sticky');
-        }
-        
-    },{
-        offset: '15%'
-    });
+    
 
+    
     /*===PRODUCTS===*/
     $('.js--section-products').waypoint(function(direction) {
         if (direction == "down") {
@@ -66,18 +67,55 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $('.js--section-products').offset().top}, 100);
     });
     
-
+    
+    /*=== MOBILE NAV ===*/
+    $(".js--nav-icon").click(function() {
+        var nav = $(".js--main-nav");
+        var icon = $(".js--nav-icon ion-icon");
+        nav.slideToggle(200);
+        if (icon.attr("name") == "menu-outline") {
+           icon.attr("name", "close-outline");
+        } 
+        else {
+           icon.attr("name", "menu-outline")
+        }
+        /* appear and disappear */
+        
+    });
+    
     /*
-    $('.js--scroll-to-stories').click(function() {
-        $('html, body').animate({scrollTop: $('.js--section-stories').offset().top}, 1000);
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon ion-icon')
+        nav.slideToggle(200);
+
+        if (icon.hasClass('menu-outline')){
+            icon.addClass('close-outline');
+            icon.removeClass('menu-outline');
+        } else{
+            icon.removeClass('close-outline');
+            icon.addClass('menu-outline');
+        }
     });
     */
-
-    /* NAVIGATION SCROLL */
-    
 });
 
+$(function(){
+
+    $(window).bind("resize",function(){
+        console.log($(this).width())
+        if($(this).width() <900){
+        $('.js--center-div').removeClass('u-center-div')
+        }
+        else{
+        $('.js--center-div').addClass('u-center-div')
+        }
+    })
+})
+
 /*
+    <ion-icon name="close-outline"></ion-icon>
+
     var waypoints = $('#handler-first').waypoint(function(direction) {
         notify(this.element.id + ' hit 25% from top of window') 
       },{

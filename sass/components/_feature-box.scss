@@ -4,46 +4,19 @@
         rgba($color-primary, .5),
         transparent);
     /*background-color: rgba($color-white, .6);*/
-    font-size: 1.4rem;
-    padding: .7rem;
+    font-size: 1.6rem;
+    padding: 1.2rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
     color: $color-white;
     transition: all .3s;
-    height: 23rem;
-    width: 20rem;
+    height: 25rem;
+    width: 28rem;
     margin: auto;
     
-    /*
-    &__img{
-        
-        
-        &--mocha{
-            position: absolute;
-            top: 25%;
-            left: 3%;
-            display: block;
-            height: 38rem;
-            width: auto;
-            border-radius: 3px;  
-        }
-        
-        &--matcha{
-            position: absolute;
-            display: inline-block;
-            top: 30%;
-            right: 3%;
-            height: 38rem;
-            width: 36rem;
-            border-radius: 3px;
-            z-index: 10;
-        }
-        
-    }
-    */
     &__icon{
-        height: 7.5rem;
+        height: 10rem;
         width: auto;
         padding-bottom: 1rem;
     }

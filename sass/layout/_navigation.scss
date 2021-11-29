@@ -1,130 +1,20 @@
 .navigation{
-
-    &-home,
-    &-products,
-    &-learn{
-        position: absolute;
-        top: 3rem;
-        height: 5rem;
-        background-image: linear-gradient(
-            to left, 
-            rgba($color-primary, .5),
-            transparent);
-        width: 100%;  
-        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
-
-        &__logo-box{
-            position: absolute;
-            width: auto;
-            height: 5rem;
-            top: 0;
-            left: 4rem;
-        }
-    
-        &__logo{
-            height: 5rem;   
-        }
-
-        &__main-nav{
-            float: right;
-            list-style: none;
-            margin-right: 3rem;
-            margin-top: 1.2rem;
-    
-            &--about li{
-                color: $color-grey-dark;
-            }
-    
-            & li{
-                display: inline-block;
-                margin-left: 4rem;
-    
-                & a:link,
-                & a:visited{
-                    padding: 1.3rem 0;
-                    color: $color-white;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: $default-font-size;
-                    border-bottom: 2px solid transparent;
-                    transition: border-bottom .3s;
-    
-                }
-    
-                & a:hover,
-                & a:active{
-                    border-bottom: 2px solid rgba($color-white, .8);
-                }
-            }
-        }
-    }
-
-    &-about{
-        position: absolute;
-        top: 3rem;
-        height: 5rem;
-        background-image: linear-gradient(
-            to left, 
-            rgba($color-primary, .5),
-            transparent);
-        width: 100%;  
-        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
-
-        &__logo-box{
-            position: absolute;
-            width: auto;
-            height: 5rem;
-            top: 0;
-            left: 4rem;
-        }
-    
-        &__logo{
-            height: 5rem;   
-        }
-
-        &__main-nav{
-            float: right;
-            list-style: none;
-            margin-right: 3rem;
-            margin-top: 1.2rem;
-    
-            & li{
-                display: inline-block;
-                margin-left: 4rem;
-    
-                & a:link,
-                & a:visited{
-                    padding: 1.3rem 0;
-                    color: $color-grey-dark;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: $default-font-size;
-                    border-bottom: 2px solid transparent;
-                    transition: border-bottom .3s;
-    
-                }
-    
-                & a:hover,
-                & a:active{
-                    border-bottom: 2px solid rgba($color-grey-dark, .8);
-                }
-            }
-        }
-    }
-    
-}
-
-.sticky{
-    position: fixed;
+    position: absolute;
     top: 3rem;
     height: 5rem;
     background-image: linear-gradient(
         to left, 
         rgba($color-primary, .5),
         transparent);
-    width: 95.25%;  
+    
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
-    z-index: 100;
+    width: 100%;
+    z-index: 100;  
+
+    @include respond(tab-port){
+        background-image: none;
+        box-shadow: none;
+    }
 
     &__logo-box{
         position: absolute;
@@ -136,21 +26,40 @@
 
     &__logo{
         height: 5rem;   
+
+        @include respond(small-phone){
+            height: 3rem;
+        }
     }
 
     &__main-nav{
         float: right;
         list-style: none;
         margin-right: 3rem;
-        padding-top: 1.2rem;
+        margin-top: 1.2rem;
+
+        @include respond(tab-port){
+            display: none;
+            float: left;
+            margin-top: 5rem;
+            margin-left: 1rem;   
+            background-image: linear-gradient(
+                to left, 
+                rgba($color-primary, .8),
+                transparent);
+        }
 
         & li{
             display: inline-block;
             margin-left: 4rem;
+            
+            @include respond(tab-port){
+                display: block;
+            }
 
             & a:link,
             & a:visited{
-                padding: 1rem 0;
+                padding: 1.3rem 0;
                 color: $color-white;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -158,7 +67,13 @@
                 border-bottom: 2px solid transparent;
                 transition: border-bottom .3s;
 
-            }
+                @include respond(tab-port){
+                    display: block;
+                    border: 0;
+                    padding: 1rem;
+                    padding-left: 1rem;
+                    font-size: $default-font-size;                }
+                }
 
             & a:hover,
             & a:active{
@@ -166,5 +81,37 @@
             }
         }
     }
+    
+}
+
+// === Mobile Nav ===
+.mobile-nav-icon{
+    float: right;
+    margin-right: 3rem;
+    cursor: pointer;
+    display: none;
+    font-size: 3.5rem;
+
+    @include respond(tab-port){
+        display: inline-block;
+    }
+}
+
+
+
+.sticky{
+    position: fixed;
+    width: 96%;  
+
+    @include respond(big-desktop){
+        width: 96.2%;
+    }
+
+    @include respond(tab-land){
+        width: 100%;
+        box-shadow: none;
+    }
+
+    
 }
 

@@ -1,33 +1,19 @@
-.header-about{
-    position: relative;
-    height: 100vh;
+.section-about{
+    
+    background-image: linear-gradient(to right, 
+            rgba($color-grey-dark,.8), 
+            rgba($color-grey-dark,.6)), 
+            url(../img/about/about-mobile.jpg);
+    /*
+    background-color: $color-grey-dark;
+    */
+    background-size: cover;
+    padding: 10rem 0;
+    font-size: 1.6rem;
+    color: $color-white;
+    display: none;
 
-    &__text-box{
-        padding: 2rem 3rem;
-        width: 60rem;
-        font-size: 1.6rem;
-        border-radius: 1rem;
-        color: rgba($color-grey-dark-3,.8);
-        position: absolute;
-        line-height: 2rem;
-        top: 35%;
-        left: 10%;
-        box-shadow: -1rem 1.5rem 4rem rgba($color-black, .15);
-        background-image: linear-gradient(
-                            to right top,
-                            rgba($color-grey-light-1,.8),
-                            transparent);
-        transition: all .3s;
-
-        &:hover{
-            transform: translateX(.3rem) translateY(-.3rem);
-            box-shadow: .5rem 1rem 2rem rgba($color-black,.2);
-            background-image: linear-gradient(
-                            to right top,
-                            rgba($color-grey-light-1,1),
-                            transparent);
-        }
+    @include respond(tab-port){
+        display: block;
     }
 }
-
-    

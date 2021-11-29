@@ -1,30 +1,3 @@
-/* Color Theme Swatches in Hex */
-$Blurred-white-abstract-glass-wall-from-modern-building-1-hex: #F0F0F2;
-$Blurred-white-abstract-glass-wall-from-modern-building-2-hex: #A9B9D9;
-$Blurred-white-abstract-glass-wall-from-modern-building-3-hex: #7B95A6;
-$Blurred-white-abstract-glass-wall-from-modern-building-4-hex: #9FB6BF;
-$Blurred-white-abstract-glass-wall-from-modern-building-5-hex: #C1D4D9;
-
-/* Color Theme Swatches in Hex */
-$Light-blue-color-frosted-Glass-texture-background-1-hex: #97A2A6;
-$Light-blue-color-frosted-Glass-texture-background-2-hex: #475659;
-$Light-blue-color-frosted-Glass-texture-background-3-hex: #BAD3D9;
-$Light-blue-color-frosted-Glass-texture-background-4-hex: #A4BABF;
-$Light-blue-color-frosted-Glass-texture-background-5-hex: #DCF0F2;
-
-/* Color Theme Swatches in Hex */
-$texture-of-a-drop-of-rain-on-a-glass-wet-transparent-background-1-hex: #384D59;
-$texture-of-a-drop-of-rain-on-a-glass-wet-transparent-background-2-hex: #8198A6;
-$texture-of-a-drop-of-rain-on-a-glass-wet-transparent-background-3-hex: #A3B4BF;
-$texture-of-a-drop-of-rain-on-a-glass-wet-transparent-background-4-hex: #C5D1D9;
-$texture-of-a-drop-of-rain-on-a-glass-wet-transparent-background-5-hex: #F0F2F2;
-/*
-COLORS:
-Light green: #C1D4D9
-Medium green: #9FB6BF
-Dark green: #7B95A6
-*/
-
 //COLOURS
 $color-primary: #A3B4BF;
 $color-primary-light: #C5D1D9;
@@ -61,12 +34,20 @@ $color-instagram:#8a3ab9 ;
 
 //FONT
 $default-font-size: 1.6rem;
+$large-font-size: 2.4rem;
+$big-desktop-font-size: 3.5rem;
 
 //GRID
+$grid-width-large: 120rem;
 $grid-width: 114rem;
+
+$gutter-vertical-large: 9rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-medium: 7rem;
 $gutter-vertical-small: 6rem;
+
 $gutter-horizontal: 6rem;
+$gutter-horizontal-medium: 5rem;
 $gutter-horizontal-small: 4rem;
 
 

@@ -23,21 +23,21 @@
     <header class="header header-products">
 
         <div>
-            <nav class="navigation navigation-home">
+            <nav class="navigation">
             
-                <div class="navigation navigation-home__logo-box">
-                    <a href="index.html" class="navigation-home__link">
-                        <img src="img/products/logo-black.png" alt="Logo" class="navigation-home__logo">
+                <div class="navigation__logo-box">                            
+                    <a href="index.html" class="navigation__link">
+                    <img src="img/products/logo-black.png" alt="Logo" class="navigation__logo">
                     </a>
                 </div>
-                <ul class="navigation navigation-home__main-nav">
+                <ul class="navigation__main-nav js--main-nav">
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="learn.html">Learn More</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
                     <li><a href="#"><ion-icon name="cart-outline"></ion-icon></a></li>
                 </ul> 
-            
+                <a class="mobile-nav-icon js--nav-icon"><ion-icon class="menu-outline" name="menu-outline"></ion-icon></a>
             </nav>
         </div>
         
@@ -46,8 +46,6 @@
                 <span class="heading-primary--main heading-primary--main--products">We deliver all over Bangladesh</span>
                 <span class="heading-primary--sub heading-primary--sub--products">*Home delivery only available in dhaka and chattogram</span>
             </h1>
-
-            <a href="#" class="btn btn--transparent btn--animated js--scroll-to-products">Shop now</a>
         </div>
         <div class="header-products__container">
             <img src="img/products/Bangladesh-map.png" alt="Map of Bangladesh">
@@ -66,7 +64,7 @@
 
                 <div class="col-1-of-2">
                     <div class="card">
-                        <div class="card__side card__side--front">
+                        <div class="card__side card__side--front card__side--front--products">
                             <div class="card__picture card__picture--1">
                                 &nbsp;
                             </div>
@@ -75,14 +73,14 @@
                                     Mocha Mask
                                 </span>
                             </h4>
-                            <div class="card__details">
+                            <div class="card__details card__details--products">
                                 <ul>
                                     <li>Removes dead skin cells and dirt</li>
                                     <li>Brightens skin complexion</li>
                                     <li>Reduces bumps on the skin</li>
                                     <li>Great for acne prone and oily skin</li>
                                     <li>
-                                        <i class="card__details__icon icon-basic-star"></i>
+                                        <i class="card__details__icon card__details__icon--products icon-basic-star"></i>
                                         4.5/5.0 - <u>52 Reviews</u> 
                                     </li>
                                 </ul>
@@ -90,7 +88,7 @@
                         </div>
                         <div class="card__side card__side--back card__side--back-1">
                             <div class="card__cta">
-                                <div class="card__price-box">
+                                <div class="card__price-box card__price-box--products">
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&#2547;740</p>
                                 </div>
@@ -102,7 +100,7 @@
     
                 <div class="col-1-of-2">
                     <div class="card">
-                        <div class="card__side card__side--front">
+                        <div class="card__side card__side--front card__side--front--products">
                             <div class="card__picture card__picture--2">
                                 &nbsp;
                             </div>
@@ -113,12 +111,12 @@
                             </h4>
                             <div class="card__details">
                                 <ul>
-                                    <li>Great for sun tan removal</li>
-                                    <li>Great for acne scar removal</li>
-                                    <li>Improves complexion</li>
-                                    <li>Improves signs of ageing</li>
-                                    <li>
-                                        <i class="card__details__icon icon-basic-star"></i>
+                                    <li class="card__details__list--products">Great for sun tan removal</li>
+                                    <li class="card__details__list--products">Great for acne scar removal</li>
+                                    <li class="card__details__list--products">Improves complexion</li>
+                                    <li class="card__details__list--products">Improves signs of ageing</li>
+                                    <li class="card__details__list--products">
+                                        <i class="card__details__icon card__details__icon--products icon-basic-star"></i>
                                         4.7/5.0 - <u>36 Reviews</u> 
                                     </li>
                                 </ul>
@@ -126,7 +124,7 @@
                         </div>
                         <div class="card__side card__side--back card__side--back-2">
                             <div class="card__cta">
-                                <div class="card__price-box">
+                                <div class="card__price-box card__price-box--products">
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&#2547;800</p>
                                 </div>
@@ -148,7 +146,7 @@
 
     <section class="section-steps js--section-steps">
         <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
+            <h2 class="heading-secondary heading-secondary--products">
                     Let's mix and mask
             </h2>
         </div>
@@ -187,50 +185,53 @@
             </div>
             <div class="section-features__mocha--ingredients">
                 <div class="row">
-                    <div class="col-1-of-5">
+                    <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/cocoa-powder.png" alt="Cocoa powder" class="feature-box__icon">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                <span class="heading-tertiary--span-products">British White Kaolin</span> </h3>
+                                <span class="heading-tertiary">British White Kaolin</span> </h3>
                             <p class="feature-box__text">
                                 Fights pimples, improves elasticity and complexion of skin, prevents sun damage!                            </p>
                         </div>
                     </div>
-                    <div class="col-1-of-5">
+                    <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/british-white-kaolin.png" alt="British white kaolin" class="feature-box__icon">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                <span class="heading-tertiary--span-products">British White Kaolin</span> </h3>
+                                <span class="heading-tertiary">British White Kaolin</span> </h3>
                             <p class="feature-box__text">
                                 Helps stimulate circulation, purifies the skin, and closes dilated pores!
                             </p>
                         </div>
                     </div>
-                    <div class="col-1-of-5">
+                    <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/sunflower-oil.png" alt="Sunflower oil" class="feature-box__icon">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                <span class="heading-tertiary--span-products">Sunflower Oil</span> </h3>
+                                <span class="heading-tertiary">Sunflower Oil</span> </h3>
                             <p class="feature-box__text">
                                 Withdraws impurities, prevents dryness and roughness, hydrates skin!
                             </p>
                         </div>
                     </div>
-                    <div class="col-1-of-5">
+                   
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
                         <div class="feature-box">
                             <img src="img/products/ground-coffee.png" alt="Ground coffee" class="feature-box__icon">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                <span class="heading-tertiary--span-products">Ground Coffee</span> </h3>
+                                <span class="heading-tertiary">Ground Coffee</span> </h3>
                             <p class="feature-box__text">
                                 Exfoliates, reduces redness and inflammation, bringing a bright, lively complexion!
                             </p>
                         </div>
                     </div>
-                    <div class="col-1-of-5">
+                    <div class="col-1-of-2">
                         <div class="feature-box">
                             <img src="img/products/moroccan-rhassoul-clay.png" alt="Moroccan rhassoul clay" class="feature-box__icon">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                <span class="heading-tertiary--span-products">Moroccan Rhassoul Clay</span> </h3>
+                                <span class="heading-tertiary">Moroccan Rhassoul Clay</span> </h3>
                             <p class="feature-box__text">
                                 Helps prevent acne and detoxify the skin, and removes dead cells!
                             </p>
@@ -251,7 +252,8 @@
                     <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/french-green-clay.png" alt="French Green Clay" class="feature-box__icon">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><span class="heading-tertiary--span-products">French Green Clay</span>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                French Green Clay
                             </h3>
                             <p class="feature-box__text">
                                 Prevents breakouts, clears blemishes and calms irritated skin!
@@ -261,7 +263,7 @@
                     <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/tapioca-starch.png" alt="Tapioca Starch" class="feature-box__icon">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><span class="heading-tertiary--span-products">Tapioca Starch</span></h3>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Tapioca Starch</h3>
                             <p class="feature-box__text">
                                 Tackles acne, acne scars and dullness, and enhances your skin tone!
                             </p>
@@ -270,18 +272,19 @@
                     <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/matcha-powder.png" alt="Matcha Powder" class="feature-box__icon">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><span class="heading-tertiary--span-products">Matcha Powder</span></h3>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Matcha Powder</h3>
                             <p class="feature-box__text">
                                 An all natural ingredient which helps your skin restore its balance!
                             </p>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="row">
                     <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/baobab-powder.png" alt="Baobab Powder" class="feature-box__icon">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><span class="heading-tertiary--span-products">Baobab Powder</span></h3>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Baobab Powder</h3>
                             <p class="feature-box__text">
                                 Heal dry skin and decrease signs of ageing like fine lines!
                             </p>
@@ -290,7 +293,7 @@
                     <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/vitamin-c-powder.png" alt="Vitamin C powder" class="feature-box__icon">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><span class="heading-tertiary--span-products">Viamin C Powder</span></h3>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Viamin C Powder</h3>
                             <p class="feature-box__text">
                                 Protect against sun damage, reduce hyperpigmentation & brighten complexion!                            </p>
                         </div>
@@ -298,7 +301,7 @@
                     <div class="col-1-of-3">
                         <div class="feature-box">
                             <img src="img/products/orange-essential-oil.png" alt="Orange essential oil" class="feature-box__icon">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><span class="heading-tertiary--span-products">Orange essential oil</span></h3>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Orange essential oil</h3>
                             <p class="feature-box__text">
                                 Prevent premature skin aging and fight acne!
                             </p>
@@ -309,7 +312,7 @@
             </div>
     </section>
     
-    <section class="section-book--products" id="section-book">
+    <section class="section-book--products js--section-book" id="section-book">
             <div class="row">
                 <div class="book js--book">
                     <div class="book__form">

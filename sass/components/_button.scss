@@ -68,7 +68,7 @@ after clicking (normally turns purple)*/
         color: $color-white;
         background-image: linear-gradient(
             to right top,
-            rgba($color-primary, .5), 
+            rgba($color-primary, .8), 
             transparent);
     }
     
@@ -87,14 +87,9 @@ after clicking (normally turns purple)*/
     }
 
     &--about{
-        &:link,
-        &:visited{
-            padding: 3px;
-            transition: all .3s;
-            text-decoration: none;
-            color: rgba($color-grey-dark-3,.8);
-            border-bottom: 1px solid $color-grey-dark-3;
-        }
+        color: $color-grey-dark;
+        border-bottom: 1px solid $color-grey-dark;
+
         &:hover{
             color: $color-white;
             border-bottom: 1px solid $color-white;
