@@ -15,10 +15,6 @@
         );
     background-size: cover;
     
-    
-/*
-    clip-path: polygon(80% 0%, 100% 25%, 100% 100%, 25% 100%, 0% 75%, 0% 0%);
-*/
 }
 
 .section-features__mocha{
@@ -28,15 +24,6 @@
         rgba($color-secondary-dark,.8) 60%,
         rgba($color-secondary-light,.8));
     position: relative;
-      
-    /*
-    &--ingredients{
-        width: 65%;
-        position: absolute;
-        right: 5%;
-        top: 45%;         
-    }
-    */
 }
 
 .section-features__matcha{
@@ -48,16 +35,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-
-    /*
-    &--ingredients{
-        width: 65%;
-        position: absolute;
-        left: 2%;
-        top: 50%;
-        z-index: 100;  
-    }
-    */
 }
 
 .section-book--products{
